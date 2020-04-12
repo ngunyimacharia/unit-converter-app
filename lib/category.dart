@@ -55,11 +55,12 @@ class Category extends StatelessWidget {
                   children: <Widget>[
                     Padding(
                         padding: EdgeInsets.all(_iconPadding),
-                        child: Icon(icon)),
+                        child: Icon(icon, size: _iconSize)),
                     Center(
                         child: Text(
                       name,
                       textAlign: TextAlign.center,
+                          style: new TextStyle(fontSize: _textSize),
                     ))
                   ],
                 ))),
